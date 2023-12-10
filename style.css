@@ -1,0 +1,38 @@
+body {
+    background: #DDF2FD;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+#mainNav {
+    background-color: #164863;
+    font-size: 1.25rem;
+}
+
+#mainNav .navbar-brand {
+    color: #9BBEC8;
+}
+
+#mainNav .nav-link {
+    color: white;
+}
+
+#mainNav .nav-link.active {
+    color: #9BBEC8;
+}
+
+#mainNav .nav-link.disabled {
+    color: #427D9D;
+}
+
+#mainNav .nav-link:hover {
+    color: #9BBEC8;
+}
+
+.nav-link {
+    text-transform: uppercase;   
+}
