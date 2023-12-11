@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visit My City - Bootstrap Testing</title>
+    <title>SYDNEY - Bootstrap Testing</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
 
 <body>
 
-    <nav id="mainNav" class="navbar navbar-dark navbar-expand-md fixed-top py-0">
+    <nav id="mainNav" class="navbar navbar-light navbar-expand-md fixed-top py-0">
         <a href="#" class="navbar-brand">
-            <h1 class="fs-3 ms-3">Visit My City</h1>
+            <h1 class="fs-3 ms-3">✧SYDNEY</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,21 +38,100 @@
                     <a class="nav-link" href="#">Flights</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link disabled" aria-disabled="true">What's On?</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="d-none d-md-block col-md-6 text-center">
+                <div class="text-container">
+                    <h2>VISIT<span>✧</span>SYDNEY</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="rect-img-container">
+                    <img class="rect-img bl-radius" src="img/leigh-Wp3xWCVXMCI-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="rect-img-container">
+                    <img class="rect-img r-radius" src="img/manny-moreno-TvkSdFl7FWk-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="text-container p-3 mx-5">
+                    <h3>VISIT</h3>
+                    <div class="staricon d-none d-md-block">✧</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores facere soluta
+                        sapiente hic, eum saepe omnis exercitationem quod, eos vero illum cum rerum aperiam pariatur
+                        minima atque quo laudantium.
+                        Doloribus debitis obcaecati perspiciatis, porro atque adipisci voluptate dolore tempore tempora
+                        consectetur beatae praesentium, quo ipsum, corrupti quasi!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-2">
+                <div class="rect-img-container">
+                    <img class="rect-img l-radius" src="img/kewal-TkEBaFrYJ_g-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-1">
+                <div class="text-container p-3 mx-5">
+                    <h3>VISIT</h3>
+                    <div class="staricon d-none d-md-block">✧</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores facere soluta
+                        sapiente hic, eum saepe omnis exercitationem quod, eos vero illum cum rerum aperiam pariatur
+                        minima atque quo laudantium.
+                        Doloribus debitis obcaecati perspiciatis, porro atque adipisci voluptate dolore tempore tempora
+                        consectetur beatae praesentium, quo ipsum, corrupti quasi!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="rect-img-container">
+                    <img class="rect-img tr-radius" src="img/mitchell-luo--_ayGhKMUtA-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="text-container p-3 mx-5">
+                    <h3>VISIT</h3>
+                    <div class="staricon d-none d-md-block">✧</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores facere soluta
+                        sapiente hic, eum saepe omnis exercitationem quod, eos vero illum cum rerum aperiam pariatur
+                        minima atque quo laudantium.
+                        Doloribus debitis obcaecati perspiciatis, porro atque adipisci voluptate dolore tempore tempora
+                        consectetur beatae praesentium, quo ipsum, corrupti quasi!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 
 
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNav");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </body>
 
 </html>

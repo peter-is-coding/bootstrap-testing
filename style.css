@@ -1,5 +1,7 @@
 body {
-    background: #DDF2FD;
+    background: linear-gradient(#9BBEC8, #9BBEC8 10%, #DDF2FD );
+    color: #427D9D;
+    font-weight: 100;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -8,13 +10,53 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.text-container span {
+    color: #164863;
+    font-weight: 700;
+    font-size: 4.5rem;
+}
+
+.staricon {
+    color: #164863;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+    
+}
+
 #mainNav {
-    background-color: #164863;
     font-size: 1.25rem;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+@media (max-width:1200px) {
+    #mainNav {
+        background-color: #9BBEC8;
+        box-shadow: 0px 1px 10px #164863;
+    }
+}
+
+#mainNav.scrolled {
+    background-color: #9BBEC8;
+    box-shadow: 0px 1px 10px #164863;
 }
 
 #mainNav .navbar-brand {
-    color: #9BBEC8;
+    color: #164863;
 }
 
 #mainNav .nav-link {
@@ -22,17 +64,85 @@ h1 {
 }
 
 #mainNav .nav-link.active {
-    color: #9BBEC8;
+    color: #164863;
 }
 
 #mainNav .nav-link.disabled {
-    color: #427D9D;
+    color: #6e9fba;
 }
 
 #mainNav .nav-link:hover {
-    color: #9BBEC8;
+    color: #164863;
 }
 
 .nav-link {
     text-transform: uppercase;   
+}
+
+
+
+.rect-img-container {
+    position: relative;
+}
+
+.rect-img-container::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.rect-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img {
+    transition: border-radius 0.3s;
+}
+
+img.bl-radius {
+    border-bottom-left-radius: 25%;
+}
+
+img.r-radius {
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+img.l-radius {
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+}
+
+img.tr-radius {
+    border-top-right-radius: 25%;
+}
+
+@media (min-width:1500px) {
+    
+    body { 
+        width: 1500px;
+        margin: auto;
+    };
+
+    img.bl-radius {
+        border-bottom-right-radius: 25%;
+    }
+    
+    img.r-radius, img.l-radius {
+        border-radius: 25%;
+    }
+    
+    img.tr-radius {
+        border-top-left-radius: 25%;
+    }
+}
+
+
+@media (max-width:767px) {
+    img {
+        border-radius: 0 !important;
+    }
 }
